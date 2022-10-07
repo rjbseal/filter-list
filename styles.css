@@ -1,0 +1,88 @@
+body {
+    background: #10162F;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 0 1em;
+}
+
+.search {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+.search-wrapper label {
+    font-size: 2em;
+}
+
+.btn {
+    width: 100%;
+    padding: .5em 1em;
+    margin: 1em 0;
+    background: #2e46a5;
+    color: #aeb5bf;
+    border: 2px solid #aeb5bf;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 0.5em;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #aeb5bf;
+    outline: none;
+    font-size: 1.5em;
+    color: #535769;
+    transition: all linear 0.3s;
+
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1em;
+}
+
+.list-items {
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    background: #282d44;
+    font-size: 1.2rem;
+    border: 2px solid #9fa2ac;
+    padding: 1em;
+    list-style: none;
+    margin-bottom: .5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 8px;
+    transition: all 0.3s;
+}
+
+.list-item:hover {
+    transform: scale(1.01);
+    border: 2px solid #fff;
+    background: #535769;
+}
+
+.show { 
+    opacity:1;
+    animation: FadeIn 1s linear; 
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes FadeIn { 
+    0% { opacity:0; }
+    100% {opacity:1; }
+  }
